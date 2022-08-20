@@ -16,7 +16,7 @@ document.getElementById('stop').addEventListener('click', ()=>{
 document.getElementById('reset').addEventListener('click', ()=>{
     clearInterval(int);
     [milliseconds,second,minute,hours] = [0,0,0,0];
-    timerRef.innerHTML = '00 : 00 : 00 : 000';
+    timerRef.innerHTML = '00 : 00 : 00 : 00';
 });
 
 function mainTime(){
