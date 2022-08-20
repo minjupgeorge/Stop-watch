@@ -6,7 +6,7 @@ document.getElementById('start').addEventListener('click', ()=>{
     if(int!==null){
         clearInterval(int);
     }
-    int = setInterval(mainTime,10);
+    int = setInterval(mainTime,20);
 });
 
 document.getElementById('stop').addEventListener('click', ()=>{
@@ -16,7 +16,7 @@ document.getElementById('stop').addEventListener('click', ()=>{
 document.getElementById('reset').addEventListener('click', ()=>{
     clearInterval(int);
     [milliseconds,second,minute,hours] = [0,0,0,0];
-    timerRef.innerHTML = '00 : 00 : 00 : 00';
+    timerRef.innerHTML = '00 : 00 : 00 : 000';
 });
 
 function mainTime(){
