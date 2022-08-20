@@ -29,9 +29,7 @@ function mainTime(){
             minute++;
             if(minute == 60){
                 minute = 0;
-            if(hours == 23)
-                hours=0;
-                milliseconds++;
+                hours++;
             }
         }
     }
@@ -39,6 +37,6 @@ function mainTime(){
  let m = minute < 10 ? "0" + minute : minute;
  let s = second < 10 ? "0" + second : second;
  let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
-let  h=hours < 1 ? "0" + hours:hours;
+let  h=hours < 10 ? "0" + hours:hours;
  timerRef.innerHTML = `${h} : ${m} : ${s} : ${ms}`;
 }
